@@ -1,7 +1,7 @@
 import './index.css'
 import React, { useState } from 'react';
 
-export default function ToDoList(){
+export default function ListaTarefas(){
   const [task, setTask] = useState('');
   const [tasks, setTasks] = useState([]);
 
