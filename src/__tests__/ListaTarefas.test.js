@@ -1,10 +1,10 @@
 import { render, screen, fireEvent } from '@testing-library/react'
-import ListaTarefas from '../components/ListaTarefas'
+import ToDoList from '../components/ListaTarefas'
 import React from 'react'
 
-describe('ListaTarefas', () => {
-  test(' renderiza input e botão corretamente', () => {
-    render(<ListaTarefas />)
+describe('ToDoList', () => {
+  test('renderiza input e botão corretamente', () => {
+    render(<ToDoList />)
     const input = screen.getByPlaceholderText('Nova tarefa')
     const button = screen.getByText('Adicionar')
     
@@ -13,7 +13,7 @@ describe('ListaTarefas', () => {
   })
 
   test('adiciona tarefa à lista', () => {
-    render(<ListaTarefas />)
+    render(<ToDoList />)
     const input = screen.getByPlaceholderText('Nova tarefa')
     const button = screen.getByText('Adicionar')
 
